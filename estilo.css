@@ -1,0 +1,71 @@
+body
+{
+	background-color: #fff6f1;
+	font-family: "Helvetica",Arial;
+}
+#contenido
+{
+	width:960px;
+	margin:0 auto;
+	text-align: center;
+}
+h1
+{
+	color: #e44e3d;
+}
+nav ul li
+{
+	display: inline-block;
+	margin-right: 20px;
+	color: #1d1d1d;
+	cursor: pointer;
+}
+#textopr
+{
+	width: 600px;
+	height: 450px;
+	background-color: #1d1d1d;
+	color: #fff;
+	margin: 0 auto;
+	text-align: left;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+a
+{
+	color: #e44e2d;
+	font-weight: bold;
+}
+
+section div article
+{
+	display: inline-table;
+	margin-right: 5px;
+
+}
+section div aside
+{
+	display: inline-table;
+	margin-right: 5px;
+}
+table
+{
+	
+
+
+	background-color: #444444;
+	color: #fff;
+	margin: 0 auto;
+	text-align: left;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	vertical-align: center;
+}
+input[type='text'],input[type='password']
+	{
+		border-color:blue;
+		
+	}
+
