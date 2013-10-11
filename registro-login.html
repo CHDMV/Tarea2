@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html long="es">
+	<head>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body onload="generar()">
+		<div id="contenedor"></div>
+	</body>
+
+</html>
+
+	<script type="text/javascript">
+		function generar()
+		{
+
+			var contenido ="<canvas id='myCanvas' width='1000' height='200'></canvas>"+
+				"<div id='contenido'>"+
+					"<header>"+
+						
+					"</header>"+
+					"<section>"+
+					
+						"<div id='textopr'>"+
+							
+							"<br>"+
+							"<br>"+
+							"<article>"+
+								"<form name='frmingr' action='procesos/procesar.php' method='post'>"+
+								"<table >"+
+						                        "<h1 align='center'>Registrate</h1>"+
+						             "<tr>"+
+						                "<td><label >Nombre</label></td>"+
+						                "<td><input type='text' name='nombre' id='Nombre' onBlur='validarn(id)'' required autofocus/></td>"+
+						             "</tr>"+
+						              "<tr>"+
+						                "<td><label>Usuario</label></td>"+
+						                "<td><input type='text' name='usuario' id='Nick' onBlur='validarnick(id)'required autofocus></td>"+
+						              "</tr>"+
+						              "<tr>"+
+						                "<td><label>Correo</label></td>"+
+						                "<td><input type='text' name='correo' id='Correo' onBlur='validarcorreo(id)'required autofocus></td>"+
+						              "</tr>"+
+						              "<tr>"+
+						                "<td><label>Password</label></td>"+
+						                "<td><input type='password' name='pw' id='Contraseña' onBlur='validarnick(id)'required autofocus></td>"+
+						              "</tr>"+
+						              "<tr>"+
+						                "<td><label>Confirmar Password</label></td>"+
+						                "<td><input type='password' name='pw2' id='ccontra' onBlur='validarCCon()'required autofocus></td>"+
+						              "</tr>"+
+						              "<tr>"+
+						                "<td><label>Sexo</label></td>"+
+						                "<td><input type = 'radio' name ='varon' Value = 'hombre' checked>hombre<br>"+
+						                  "<input type = 'radio' name ='mujer' Value = 'mujer' >mujer</td>"+
+						              "</tr>"+
+						              "<tr>"+
+						                "<td height='72'>&nbsp;</td>"+
+						                "<td><input type='submit' value='Enviar'></td>"+
+						              "</tr>"+
+						            "</table>"+
+						        "</form>"+
+								"<nav>"+
+							"<ul>"+
+								"<li><a href='Index.html'>ATRAS</a></li>"+
+							"</ul>"+
+						"</nav>"+
+							"</article>"+
+							"<aside>"+
+								"<h1 align='center'>Log-in</h1>"+
+									"<form method='post' action='procesos/ver.php'>"+
+										"<table>"+
+											"<tr>"+									
+												"<td><label>Usuario</label></td>"+
+												"<td><input type='text' name='nombre' /></td>"+
+											"</tr>"+
+											"<tr>"+									
+												"<td><label>Clave</label></td>"+
+												"<td><input type='password' name='pw' /></td>"+
+											"</tr>"+
+											"<tr>"+
+								                "<td height='72'>&nbsp;</td>"+
+								                "<td><input type='submit' name='aceptar' value='Aceptar' /></td>"+
+								           "</tr>"+
+										"</table>"+
+									"</form>"+
+						        
+							"</aside>"+
+						"</div>"+
+						
+					"</section>"+
+				"</div>";
+		document.getElementById("contenedor").innerHTML=contenido;
+		var canvas = document.getElementById("myCanvas");
+				var context = canvas.getContext("2d");
+				var x = 400;
+				var y = 150;
+ 
+				context.font = "60pt Calibri";
+				context.lineWidth = 4;
+
+				context.strokeStyle = "pink";
+				context.strokeText("Ventas Online", x, y);
+				context.beginPath();
+				context.moveTo(x,y);
+	
+				context.font = 'italic 40px Calibri';
+}
+			
+
+
+	
+
+</script>
